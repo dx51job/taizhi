@@ -1,0 +1,48 @@
+<!--pages/homePage/homePage.wxml-->
+<view class='navbar'>
+  <van-nav-bar>
+    <text class='title' slot="title">泰州职业技术学院</text>
+    <picker bindchange="bindFloorChange" value="{{floor}}" range="{{floorArray}}" slot="right">
+      <view class="picker">
+        {{floorArray[floor]}}
+      </view>
+    </picker>
+  </van-nav-bar>
+</view>
+<view class='building' style="height:{{winHeight}}rpx">
+  <van-tabs color='#38f' custom-class='vantabs' bind:click='buildingSelected'>
+    <van-tab wx:for="{{buildings}}" wx:key="index" title="{{item.buildingName}}">
+      <scroll-view scroll-y='true' enable-back-to-top='true' class="content" style="height:{{contentHeight}}rpx">
+        <view class='cardview'>
+          <view class='card' wx:for='{{cardarray}}' wx:key='index' bindtap="tapCard" data-devtype="{{item.devtype}}">
+            <view>
+              <image class='devicon' src='{{item.devicon}}'></image>
+            </view>
+            <view class='devtype'>{{item.devtype}}</view>
+            <view catchtap='tapCard' data-switchtype='{{item.devtype}}'>
+              <image class='cardswitch' src='/assets/icons/switch_default.png' hidden='{{item.devstatus!=2}}'></image>
+              <image class='cardswitch' src='/assets/icons/switch_on.png' hidden='{{item.devstatus!=1}}'></image>
+              <image class=' cardswitch ' src='/assets/icons/switch_off.png ' hidden='{{item.devstatus!=0}}'></image>
+            </view>
+          </view>
+        </view>
+      </scroll-view>
+    </van-tab>
+  </van-tabs>
+</view>
+
+<!-- 
+Android 6.7.2 以下版本，点击取消或蒙层时，回调 fail, errMsg 为 "fail cancel"；
+Android 6.7.2 及以上版本 和 iOS 点击蒙层不会关闭模态弹窗，所以尽量避免使用「取消」分支中实现业务逻辑
+ -->
+<!-- 此处自定义modal,避免使用「取消」分支，将「确定」分支改成取消操作 -->
+<modal hidden="{{hiddenSwitchModal}}" no-cancel="true" confirm-text="取消" bindconfirm="switchModalConfirm" >
+  <view class='switchModalTitle'>
+    <text>{{switchModalTitle}}</text>
+    <text style='margin-top:5px'>{{switchModalSubtitle}}</text>
+  </view>
+  <view class='buttonview'>
+    <button class='btn_switch_on' hover-class='btn_switch_on_hover' bindtap='switchModalTapSwitchOn'>全部开启</button>
+    <button class='btn_switch_off' type='warn' bindtap='switchModalTapSwitchOff'>全部关闭</button>
+  </view>
+</modal>

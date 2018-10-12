@@ -1,0 +1,72 @@
+/* pages/login/login.wxss */
+
+.navbar {
+  padding-bottom: 10px;
+  background-color: white;
+  box-shadow: 0 0 20px #ccc;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.contentview {
+  box-sizing: border-box;
+  margin-top: 10px;
+  padding: 3%;
+}
+
+.titlehint {
+  font-size: 14px;
+  color: #999;
+  margin-left: 3%;
+}
+
+.loginview {
+  margin: 3%;
+  background-color: white;
+  border-radius: 15px;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+.loginitem {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  padding-left: 6%;
+  padding-right: 3%;
+  /* background-color: red; */
+}
+
+.loginicon {
+  width: 20px;
+  height: 20px;
+}
+
+.divider {
+  background-color: #f4f4f4;
+  width: 88%;
+  height: 1px;
+  margin-left: 6%;
+}
+
+.input {
+  /* background-color: yellow; */
+  width: 80%;
+  margin-left: 6%;
+  font-size: 16px;
+}
+
+.btn_login {
+  margin-top: 3%;
+  width: 80%;
+  color: white;
+  font-size: 16px;
+  background-color: #5d9ff2;
+}
+
+.btn_login_hover {
+  background-color: #2e8dde;
+}

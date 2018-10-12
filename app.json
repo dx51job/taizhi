@@ -1,0 +1,36 @@
+{
+  "pages": [
+    "pages/welcome/welcome",
+    "pages/login/login",
+    "pages/homePage/homePage",
+    "pages/myInfo/myInfo",
+    "pages/devList/devList",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#38f",
+    "borderStyle": "black",
+    "list": [
+      {
+        "selectedIconPath": "/assets/icons/building_selected.png",
+        "iconPath": "/assets/icons/building.png",
+        "pagePath": "pages/homePage/homePage",
+        "text": "教学楼"
+      },
+      {
+        "selectedIconPath": "/assets/icons/personal_selected.png",
+        "iconPath": "/assets/icons/personal.png",
+        "pagePath": "pages/myInfo/myInfo",
+        "text": "我的"
+      }
+    ]
+  }
+}

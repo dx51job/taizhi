@@ -1,0 +1,27 @@
+<!--pages/login/login.wxml-->
+<view class='navbar'>
+  <van-nav-bar>
+    <text class='title' slot="title">泰州职业技术学院</text>
+  </van-nav-bar>
+</view>
+<view class='contentview'>
+  <view class='titlehint'>请输入您的账号与密码</view>
+  <view class='loginview'>
+    <view class='loginitem'>
+      <image class='loginicon' src='/assets/icons/username.png'></image>
+      <view class="input">
+        <input bindinput="usernameInput" placeholder="请输入您的账号" placeholder-style="color:#999" value="{{username}}" />
+      </view>
+    </view>
+    <view class='divider'></view>
+    <view class='loginitem'>
+      <image class='loginicon' src='/assets/icons/password.png'></image>
+      <view class="input">
+        <input placeholder="请输入您的密码" placeholder-style="color:#999" password='true' bindinput="passwordInput" value="{{password}}" />
+      </view>
+    </view>
+    <view>
+      <button bindtap='bindNavigation' class='btn_login' hover-class='btn_login_hover'>登　录</button>
+    </view>
+  </view>
+</view>

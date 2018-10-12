@@ -1,0 +1,15 @@
+<!--pages/devList/devList.wxml-->
+<scroll-view class='contentview' style='height:{{winHeight}}rpx' scroll-y='true' enable-back-to-top='true'>
+  <block wx:for="{{devList}}" wx:key='index'>
+    <view class='devItem'>
+      <view class='leftitem'>
+        <text class='devName'>{{item.devName}}</text>
+        <text class='deveui'>设备编号：{{item.deveui}}</text>
+      </view>
+      <view class='rightitem'>
+        <switch checked='{{item.status==1?true:false}}' color='#38f' bindchange='switchChange' catchtap='switchTap' data-deveui='{{item.deveui}}'></switch>
+      </view>
+    </view>
+    <view class='divider'></view>
+  </block>
+</scroll-view>

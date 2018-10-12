@@ -1,0 +1,95 @@
+/* pages/homePage/homePage.wxss */
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.picker {
+  width: 40px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.building {
+  /* background: yellow; */
+}
+
+.content {
+  /* background-color: #f4f4f4; */
+}
+
+.cardview {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 3%;
+}
+
+.card {
+  flex: 0 1 41%;
+  height: 200px;
+  margin: 3%;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 0 20px #ccc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.devtype {
+  margin: 0 auto 10px;
+  font-size: 20px;
+  color: #666;
+}
+
+.devicon {
+  width: 50px;
+  height: 50px;
+}
+
+.vantabs {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.cardswitch {
+  width: 40px;
+  height: 40px;
+  /* background-color: lightcyan; */
+}
+
+.switchModalTitle {
+  /* background-color: yellow; */
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.buttonview {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  /* background-color: yellow; */
+}
+
+.btn_switch_on {
+  font-weight: bold;
+  color: white;
+  background-color: #5d9ff2;
+}
+
+.btn_switch_on_hover {
+  background-color: #2e8dde;
+}
+
+.btn_switch_off {
+  font-weight: bold;
+}

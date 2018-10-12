@@ -1,0 +1,59 @@
+/* pages/devList/devList.wxss */
+
+.left {
+  display: flex;
+  align-items: center;
+  color: #666;
+}
+
+.leftarrow {
+  width: 30px;
+  height: 30px;
+}
+
+.lefttext {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.contentview {
+  width: 88%;
+  margin: 6%;
+  /* background-color: yellow; */
+}
+
+.devItem {
+  background-color: white;
+  height: 60px;
+  display: flex;
+}
+
+.divider {
+  height: 1px;
+}
+
+.leftitem {
+  display: flex;
+  flex-direction: column;
+  /* background-color: yellow; */
+  flex: 1 1 auto;
+  padding-left: 20px;
+  justify-content: center;
+}
+
+.devName {
+  font-size: 16px;
+}
+
+.deveui {
+  font-size: 14px;
+  color: #666;
+}
+
+.rightitem {
+  /* background-color: red; */
+  flex: 0 1 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

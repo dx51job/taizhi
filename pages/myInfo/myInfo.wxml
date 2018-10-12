@@ -1,0 +1,43 @@
+<!--pages/myInfo/myInfo.wxml-->
+<view class='navbar'>
+  <van-nav-bar>
+    <text class='title' slot="title">泰州职业技术学院</text>
+  </van-nav-bar>
+</view>
+<view class='userinfo'>
+  <view>
+    <image class='avatar' src='/assets/icons/logo.jpg'></image>
+  </view>
+  <view class='username'>{{username}}</view>
+</view>
+<view class='contentview' style="height:{{winHeight}}rpx">
+  <scroll-view class='content' scroll-y='true' enable-back-to-top='true' style="height:{{contentHeight}}rpx">
+    <!-- <view class='settingtitle'>管理设置</view>
+    <view class='settingview'>
+      <view class='settingitem'>
+        <image class='settingicon' src='/assets/icons/floor.png'></image>
+        <text class='settingname'>楼层管理</text>
+        <image class='arrow' src='/assets/icons/right_arrow.png'></image>
+      </view>
+      <view class='divider'></view>
+      <view class='settingitem'>
+        <image class='settingicon' src='/assets/icons/device_config.png'></image>
+        <text class='settingname'>设备配置</text>
+        <image class='arrow' src='/assets/icons/right_arrow.png'></image>
+      </view>
+    </view> -->
+    <view class='settingtitle'>功能设置</view>
+    <view class='settingview'>
+      <!-- <view class='settingitem'>
+        <image class='settingicon' src='/assets/icons/change_password.png'></image>
+        <text class='settingname'>修改密码</text>
+        <image class='arrow' src='/assets/icons/right_arrow.png'></image>
+      </view>
+      <view class='divider'></view> -->
+      <view class='settingitem' bindtap='logoutModal'>
+        <image class='settingicon' src='/assets/icons/log_out.png'></image>
+        <text class='settingname'>退出登录</text>
+      </view>
+    </view>
+  </scroll-view>
+</view>

@@ -1,0 +1,8 @@
+<!--pages/welcome/welcome.wxml-->
+<view class='center'>
+  <image class='logo' src='/assets/icons/logo.jpg'></image>
+</view>
+<view class='bottom'>
+  <text style='font-weight:bold'>V1.0.0</text>
+  <text style='margin-top:15px'>Copyright © CLAATEK 2017-2018</text>
+</view>
